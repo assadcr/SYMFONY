@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CategorieCandyController!
+{% endblock %}
+
+{% block body %}
+<table>
+{% for CategorieCandy in categories %}
+<tr>
+<td>{{ CategorieCandy.nom }}</td>
+<td>{{ CategorieCandy.description }}</td>
+<td>{{ CategorieCandy.createAt|date('Y-m-d') }}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

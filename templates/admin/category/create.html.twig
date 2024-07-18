@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CategoryController!
+{% endblock %}
+
+{% block body %}
+	<h2>Ajouter une nouvelle categorie</h2>
+
+	{{ form_start(formCategory)}}
+	{{ form_rest(formCategory)}}
+	<input type="submit" value="Creer" class="btn btn-primary">
+	{{ form_end(formCategory)}}
+{% endblock %}

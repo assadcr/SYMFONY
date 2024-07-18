@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block body %}
+<main>
+<h1>Update New Article</h1>
+{{form_start(formCategory)}}
+{{form_rest(formCategory)}}
+<input type="submit" value="mettre a jour">
+{{form_end(formCategory)}}
+
+</main>
+{% endblock %}
